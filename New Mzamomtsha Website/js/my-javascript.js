@@ -22,6 +22,20 @@ function toggleActive() {
       this.className = 'navLink active';
 
     }
+    // Background for whole nav
+    var navbar = document.getElementById("navbar");
+    if (one.className === 'navLink active') {
+      navbar.style.backgroundColor = "midnightblue";
+    } else if (two.className === 'navLink active') {
+      navbar.style.backgroundColor = "#4e84b5";
+    } else if (three.className === 'navLink active') {
+      navbar.style.backgroundColor = "#9abad6";
+    } else if (four.className === 'navLink active') {
+      navbar.style.backgroundColor = "#c1d5e6";
+    } else {
+      navbar.style.backgroundColor = "midnightblue";
+    }
+  // style class active
   var over = document.querySelector('.active');
       one.style.backgroundImage = "none";
       one.style.backgroundColor = " transparent";
@@ -43,6 +57,8 @@ function toggleActive() {
   newImage.className = "myImage";
   imageBox.appendChild(newImage);
   console.log(newImage);
+  var image = document.querySelector('.myImage')
+  image.style.width = "300px";
 
 }
 // Call function
